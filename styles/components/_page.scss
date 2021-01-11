@@ -1,0 +1,40 @@
+.site-wrapper{
+    width:100%;
+    // height:100%;
+    background-color: $background;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap:24px;
+}
+.main{
+    height:100%;
+    // width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width:50%;
+    position: fixed;
+    top:0;
+    nav{
+        transform: rotate(90deg);
+        
+    }
+    ul{
+        display: flex;
+        flex-direction: column-reverse;
+        list-style: none;
+        li{
+            font-size:28px;
+            line-height: 48px;
+            font-family:$headingFont;
+        }
+    }
+}
+section{
+min-height: 100vh;
+}
+.content{
+    // position: absolute;
+    left:0;
+}
