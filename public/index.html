@@ -6,8 +6,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" type="text/css" href="./assets/style.min.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+    <script src="./assets/script.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@700&family=Nunito:wght@200&display=swap" rel="stylesheet">
     <!-- <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@700&family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet"> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
     <title>William Maddicott Web Design & Development</title>
 </head>
 <body>
@@ -15,35 +19,55 @@
         <main class="main">
             <h1>william maddicott.</h1>
             <h1>web design & development.<span class="yellow">.</span><span class="green">.</span></h1>
-            <nav>
+            <nav class="nav">
                 <ul>
                     <li>
-                        About
+                        <a href="#about" class="active"><span class="nav__letter">A</span>bout</a>
                     </li>
                     <li>
-                        Skills
+                        <a href="#work"><span class="nav__letter">M</span>y Work</a>
                     </li>
                     <li>
-                        My Work
+                        <a href="#skills"><span class="nav__letter">S</span>kills</a>
                     </li>
                     <li>
-                        Contact
+                        <a href="#contact"><span class="nav__letter">C</span>ontact</a>
                     </li>
                 </ul>
             </nav>
         </main>
         <div class="content">
-            <section class="about">
-                <p>Hi. I'm William. Nice to meet you. I'm an experienced web designer & full stack developer based in Meanwood Village, Leeds, UK</p>
-                <p>I work with brands, agencies and anyone else across the world</p>
-                <h4>My development work focusses on React based web apps, Ecommerce & travel sites & stand alone sites... But I'll take on pretty much anything</h4>
+            <section id="about" class="about">
+                <h3>About Me<span class="red">.</span><span class="yellow">.</span><span class="green">.</span></h3>
+                <p>Hi. I'm William. Nice to meet you. I'm an experienced web designer & full stack developer based in Meanwood Village, Leeds, UK<span class="yellow">.</span></p>
+                <p>I work with brands, agencies and anyone else across the world<span class="yellow">.</span></p>
+                <img src="/images/william.png"/>
+                <h4>My development work focusses on React based web apps, Ecommerce & travel sites & stand alone sites... But I'll take on pretty much anything<span class="yellow">.</span></h4>
             </section>
-            <section class="skills">
-                <p>Hi. I'm William. Nice to meet you. I'm an experienced web designer & full stack developer based in Meanwood Village, Leeds, UK</p>
-                <p>I work with brands, agencies and anyone else across the world</p>
-                <h4>My development work focusses on React based web apps, Ecommerce & travel sites & stand alone sites... But I'll take on pretty much anything</h4>
+            <section id="work" class="work">
+                <h3>Who I've worked with<span class="red">.</span><span class="yellow">.</span><span class="green">.</span></h3>
+                <div class="work__container">
+
+                    <h4 id="casio"><a rel="nofollow" href="https://g-shock.co.uk/"><img src="./images/casiosite.jpg"/><!--<img src="./images/casio.svg" alt="casio edifice website"/>--></a></h4>  
+                    <h4 id="osprey"><a rel="nofollow" href="https://www.ospreyeurope.com/"><img src="./images/ospreysite.jpg" alt="Osprey website"/></a></h4>  
+                    <h4 id="regis"><a rel="nofollow" href="https://www.regissalons.co.uk/"><img src="./images/regissite.jpg" alt="Regis website"/></a></h4>  
+                    <h4 id="sc"><a rel="nofollow" href="https://www.specialisedcovers.com/"><img src="./images/scsite.jpg" alt="Specialised Covers website"/></a></h4>  
+                    <h4 id="maharishi"><a rel="nofollow" href="https://www.maharishistore.com/"><img src="./images/maharishisite.jpg" alt="maharishi website"/></a></h4>  
+                    <h4 id="viewgpx"><a rel="nofollow" href="https://www.viewgpx.com"><img src="./images/gpxsite.jpg" alt="GPX VIEWER website"/></a></h4>  
+                    <h4 id="pnr"><a rel="nofollow" href="https://www.viewgpx.com"><img src="./images/pnrsite.jpg" alt="PNR Converter website"/></a></h4>  
+                    <h4 id="bop"><a rel="nofollow" href="https://www.bopdj.com"><img src="./images/bopsite.jpg" alt="BOP DJ website"/></a></h4>  
+                </div>
             </section>
-            <section class="work">
+            <section id="skills" class="skills">
+            <h4>HTML</h4>  
+            <h4>CSS</h4>  
+            <h4>JS</h4>  
+            <h4>React</h4>  
+            <h4>Laravel</h4>  
+            <h4>Magento</h4> 
+            <h4>Word Press</h4>   
+            </section>
+            <section id="contact" class="contact">
                 <p>Hi. I'm William. Nice to meet you. I'm an experienced web designer & full stack developer based in Meanwood Village, Leeds, UK</p>
                 <p>I work with brands, agencies and anyone else across the world</p>
                 <h4>My development work focusses on React based web apps, Ecommerce & travel sites & stand alone sites... But I'll take on pretty much anything</h4>

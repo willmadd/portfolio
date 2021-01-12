@@ -15,14 +15,36 @@ p, li, a, address, caption{
     font-weight: 200;
 }
 
+p{
+    line-height: 24px;
+    letter-spacing: 1px;
+}
+
 h1{
     font-size: 48px;
+    text-align: center;
+}
+h3{
+    color: $yellow;
+    font-size:24px;
+}
+h4{
+    letter-spacing: 1px;
+    line-height: 24px;
+}
+
+a{
+    text-decoration: none;
 }
 
 .green{
-    color:$green;;
+    color:$green;
 }
 
 .yellow{
-    color: $yellow;;
+    color: $yellow;
+}
+
+.red{
+    color: $red;
 }
