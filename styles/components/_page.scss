@@ -1,14 +1,16 @@
 .site-wrapper {
   width: 100%;
   position: absolute;
+  transition: 2s;
+  transition-timing-function: cubic-bezier(0.83, 0, 0.17, 1);
 }
 
 .site-wrapper.about__lead {
     background-color: $background;
+    transition: 2s;
+    transition-timing-function: cubic-bezier(0.83, 0, 0.17, 1);
   }
-  .site-wrapper.work__lead {
-    background-color: blue;
-  }
+
 .main {
   height: 100%;
   // width:100%;

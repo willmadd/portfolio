@@ -1,0 +1,32 @@
+.site-wrapper.skills__lead {
+    background-color: $black;
+    transition: 2s;
+    transition-timing-function: cubic-bezier(0.83, 0, 0.17, 1);
+    h1, h3, a.active{
+        transition: 2s;
+        color: $brightYellow;
+    }
+    a{
+        transition: 2s;
+        color:$white;
+    }
+  }
+
+  .skills{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &__wrapper{
+          display:grid;
+          grid-gap:12px;
+          grid-template-columns: 1fr 1fr 1fr;
+        }
+        &__card{
+           display:flex;
+           justify-content: center;
+           align-items: center; 
+        }
+        img{
+            width:120px;
+        }
+  }

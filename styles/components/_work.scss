@@ -1,0 +1,13 @@
+.site-wrapper.work__lead {
+    background-color: $workGreyLight;
+    transition: 2s;
+    transition-timing-function: cubic-bezier(0.83, 0, 0.17, 1);
+    h1, h3, a.active{
+        transition: 2s;
+        color: $workGreyDark;
+    }
+    a{
+        transition: 2s;
+        color:$workGreyMid;
+    }
+  }

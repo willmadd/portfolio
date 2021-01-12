@@ -41,6 +41,22 @@ $(document).ready(function () {
     .from("#pnr", { y: innerHeight * 1.5 })
     .from("#bop", { y: innerHeight * 1.5 });
 
+    gsap.timeline({
+        scrollTrigger: {
+          trigger: "#skills",
+          start: "center center",
+          end: "bottom top",
+          scrub: true,
+          pin: true
+        }
+      })
+        .from("#react",  { 
+            y: '-240px',
+            x: '240px',
+            opacity:0
+        })
+        
+
     const contentSections = document.querySelectorAll("[data-scrollclass]");
     contentSections.forEach((contentSection, i) => {
 
@@ -49,7 +65,7 @@ $(document).ready(function () {
       gsap.timeline({
         scrollTrigger: {
           trigger: contentSection,
-          start: "center center",
+          start: "top center",
           end: "bottom top",
           scrub: true,
           onEnter: () => changeSection(contentSection.dataset.scrollclass),
