@@ -17,6 +17,11 @@ $(document).ready(function () {
     }
   });
 
+  const changeSection = (scrollclass) => {
+    console.log('section change')
+    console.log(scrollclass);
+    $('#site-wrapper').removeClass().addClass(`${scrollclass} site-wrapper`);
+  }
 
   gsap.timeline({
     scrollTrigger: {
@@ -35,5 +40,21 @@ $(document).ready(function () {
     .from("#viewgpx", { y: innerHeight * 1.5 })
     .from("#pnr", { y: innerHeight * 1.5 })
     .from("#bop", { y: innerHeight * 1.5 });
-});
 
+    const contentSections = document.querySelectorAll("[data-scrollclass]");
+    contentSections.forEach((contentSection, i) => {
+
+      const prevClass = i === 0 ? "about__lead" : contentSections[i - 1].dataset.scrollclass
+
+      gsap.timeline({
+        scrollTrigger: {
+          trigger: contentSection,
+          start: "center center",
+          end: "bottom top",
+          scrub: true,
+          onEnter: () => changeSection(contentSection.dataset.scrollclass),
+          onLeaveBack: () => changeSection(prevClass),
+        }
+      });
+    });
+});

@@ -1,9 +1,14 @@
 .site-wrapper {
   width: 100%;
-  // height:100%;
-  background-color: $background;
   position: absolute;
 }
+
+.site-wrapper.about__lead {
+    background-color: $background;
+  }
+  .site-wrapper.work__lead {
+    background-color: blue;
+  }
 .main {
   height: 100%;
   // width:100%;
